@@ -28,7 +28,7 @@
 name: CI (GCP / Artifact Registry)
 
 on:
-  push:
+  pull_request:
     branches: [main]
     # Run on any service-code OR helm-chart change. Yes, a helm-only edit
     # rebuilds all 9 images even though their contents didn't change — that's
